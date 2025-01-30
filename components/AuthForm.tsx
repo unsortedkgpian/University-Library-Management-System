@@ -16,7 +16,6 @@ import { Button } from "@/components/ui/button";
 import {
 	Form,
 	FormControl,
-	FormDescription,
 	FormField,
 	FormItem,
 	FormLabel,
@@ -83,7 +82,9 @@ const AuthForm = <T extends FieldValues>({
 									</FormLabel>
 									<FormControl>
 										{field.name === "universityCard" ? (
-											<ImageUpload />
+											<ImageUpload
+												onFileChange={field.onChange}
+											/>
 										) : (
 											<Input
 												required
