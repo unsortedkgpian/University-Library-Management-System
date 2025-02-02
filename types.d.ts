@@ -10,6 +10,14 @@ interface Book {
 	color: string;
 	cover: string;
 	video: string;
-	summery: string;
+	summary: string;
 	isLoanedBook?: boolean;
+}
+
+interface AuthCredentials{
+	fullName:string;
+	email:string;
+	password:string;
+	universityId:Number;
+	universityCard:string;
 }

@@ -1,13 +1,14 @@
 "use client";
 
 import AuthForm from "@/components/AuthForm";
+import { signInWithCredentials } from "@/lib/actions/auth";
 import { signInSchema } from "@/lib/validations";
 import React from "react";
 
 const page = () => {
-	const emptyCallback = async (data: { email: string; password: string }) => {
-		return { sucess: true }; // or whatever default value you want
-	};
+	// const emptyCallback = async (data: { email: string; password: string }) => {
+	// 	return { sucess: true }; // or whatever default value you want
+	// };
 
 	return (
 		<AuthForm
@@ -17,7 +18,7 @@ const page = () => {
 				email: "",
 				password: "",
 			}}
-			onSubmit={emptyCallback}
+			onSubmit={signInWithCredentials}
 		/>
 	);
 };
