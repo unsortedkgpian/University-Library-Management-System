@@ -34,5 +34,10 @@ This project is a production-grade University Library Management System built us
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/university-library-management.git
-   cd university-library-management
+   git clone https://github.com/unsortedkgpian/University-Library-Management-System.git
+   cd University-Library-Management-System
+
+### Production
+1.**Hosted on Vercel You can check the Production code**
+```bash
+https://university-library-management-system-dhu9.vercel.app/
