@@ -9,10 +9,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-const Header = ({session}:{session:Session}) => {
+const Header = ({ session }: { session: Session }) => {
     const pathname = usePathname();
     return (
-        <header className="my-10 flex justify-between  gap-5">
+        <header className="my-10 flex justify-between  gap-5 w-[80vw]">
             <Link href="/">
                 <Image
                     src="/icons/logo.svg"
@@ -43,8 +43,8 @@ const Header = ({session}:{session:Session}) => {
                                 {/* {session?.user?.name
                                     ?.charAt(0)
                                     ?.toUpperCase() || "?"} */}
-                                
-                                {getInitials(session?.user?.name || 'IN')}
+
+                                {getInitials(session?.user?.name || "IN")}
                             </AvatarFallback>
                         </Avatar>
                     </Link>
